@@ -45,12 +45,16 @@ measurements. Human listening and content-label approval are separate gates.
 
 ## Manifest policy and compatibility
 
-The published manifest lists only files already uploaded to immutable release
-tags. A candidate stays in `staged-originals.json` with a null URL and
-`staged_unpublished` status until the *actual* release file has been uploaded,
-downloaded independently and its hash verified. Later app catalogs must pin
-the verified URL alongside byte count and SHA-256. Never reuse a release tag
-for changed audio, reassign a sound ID, or fabricate recording licenses.
+The [published manifest](manifest.json) lists only files already uploaded to
+immutable release tags. `staged-originals.json` is a deterministic build
+provenance snapshot of local files *before publication*; its null URLs and
+`staged_unpublished` values describe that generation stage. The separate
+published manifest now has the verified
+[`v0.4.0-preview`](https://github.com/Leminno-org/ambient-sounds-library/releases/tag/v0.4.0-preview)
+links for 41 new procedural files and seven unchanged historical CC0 files.
+Later app catalogs must pin the published URL alongside byte count and
+SHA-256. Never reuse a release tag for changed audio, reassign a sound ID
+or fabricate recording licenses.
 
 The planned 120-sound content register remains a target, not a production
 claim. Stage and preview availability does not imply the Android app has
