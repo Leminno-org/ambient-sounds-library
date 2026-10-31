@@ -1,13 +1,57 @@
-# Ambient Sounds by Leminno: sound library
+# Ambient Sounds by Leminno — public sound library
 
-Public, versioned sound resources for the Ambient Sounds by Leminno Android app. Recording assets are attached to GitHub Releases; this repository contains their provenance and integrity metadata.
+Public audio resources for [Ambient Sounds by Leminno](https://github.com/Leminno-org/ambient-sounds).
+Every hosted sound has a stable catalog ID, verified PCM byte count, SHA-256
+and a pinned versioned GitHub Release link. Downloads are free.
 
-The engineering previews contain seven files derived from separately recorded CC0 sounds on Freesound. These are playback/download trials; the completed 120-sound library and production app release remain in development. The Android app source is maintained separately. Each manifest entry pins its own immutable release URL; the rain asset remains in v0.1.0-preview and the river asset is in v0.2.0-preview.
+## Distinguish the types of sounds
 
-Version v0.3.0-preview adds Gentle stream by SamsterBirdies, Gentle breeze by keweldog, Daytime forest by Sadiquecat, Cat purring by Trautwein, and Air conditioner by TimBahrij. The manifest records the original titles and source links as well as the app display names' stable IDs. All five are prepared PCM loops with measured levels; listening and heard-content label approval remain pending. The forest creator notes possible human recording noise, which needs checking during content review.
+- **CC0 recordings**: The seven previously released audio assets are individual
+  recordings by artists who published them under CC0 1.0. Their creator, title,
+  original Freesound URL, license and immutable download URL remain in
+  [`manifest.json`](manifest.json). The earlier `DNAABR` GitHub links are
+  deliberate existing release URLs and are never rewritten or silently
+  replaced. Ten other separately sourced CC0 recordings are already bundled
+  in the Android app and have verified metadata in
+  [`bundled-cc0-recordings.json`](bundled-cc0-recordings.json).
+- **Leminno original procedural audio**: Independently synthesized sound-design
+  impressions, built deterministically from mathematical noise, physical
+  resonance approximations, oscillators and time envelopes. They contain
+  **no captured field recordings**, speech or music. The sound ID describes
+  a stylized *impression* of rain, a train cabin, a keyboard, and so on.
+  [`staged-originals.json`](staged-originals.json) records their source recipe,
+  generation version/seed, PCM checks, SHA-256 and publication state.
 
-Each sound entry records the source, creator, license, processing, byte count and SHA-256. Use versioned URLs and verify both bytes and hash before playback.
+Both types are CC0 1.0 for audio use. The original procedural outputs are
+dedicated to the public domain in [`ORIGINAL_AUDIO_LICENSE.md`](ORIGINAL_AUDIO_LICENSE.md).
+No app trademarks, logos or interfaces are included in the audio license.
 
-## License
+## Reproduce original sound files without committing WAVs to Git
 
-The recording creator published the original under CC0 1.0. Leminno's processing does not add restrictions. See https://creativecommons.org/publicdomain/zero/1.0/ and manifest.json. The app brand is not licensed as part of the sound file.
+Requires Python 3.11+ and NumPy 2.x, plus the adjacent
+`ambient-sounds/catalog/planned-sounds.json` repo checkout for ID validation:
+
+```powershell
+python tools/generate_original_sounds.py --all
+python tools/verify_staged_audio.py
+```
+
+This creates 24-second 48 kHz stereo PCM16 WAVs under ignored
+`.artifacts/v0.4.0-preview/`. The outputs have crossfaded sample-continuous
+loop joins. Individual files are about 4.6 MB, so generated WAVs belong in
+versioned **GitHub Release assets**, not Git history. Sound-design validation
+is limited to file integrity, levels, DC offset, distinct samples and seam
+measurements. Human listening and content-label approval are separate gates.
+
+## Manifest policy and compatibility
+
+The published manifest lists only files already uploaded to immutable release
+tags. A candidate stays in `staged-originals.json` with a null URL and
+`staged_unpublished` status until the *actual* release file has been uploaded,
+downloaded independently and its hash verified. Later app catalogs must pin
+the verified URL alongside byte count and SHA-256. Never reuse a release tag
+for changed audio, reassign a sound ID, or fabricate recording licenses.
+
+The planned 120-sound content register remains a target, not a production
+claim. Stage and preview availability does not imply the Android app has
+integrated the new sounds or that the listener has approved them.

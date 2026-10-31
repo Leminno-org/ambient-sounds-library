@@ -1,0 +1,180 @@
+{
+  "version": "0.3.0-preview",
+  "status": "engineering_preview",
+  "sounds": [
+    {
+      "sound_id": "rain-soft",
+      "creator": "barkenov",
+      "source_url": "https://freesound.org/people/barkenov/sounds/640655/",
+      "original_title": "Soft rain.WAV by barkenov",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "asset_sha256": "bfd2eceddd04eeac960c5cdbada2da3b2c880d0382d2165f4fa35796bc173f7d",
+      "asset_bytes": 7488044,
+      "duration_seconds": 39.0,
+      "sample_rate": 48000,
+      "channels": 2,
+      "encoding": "PCM16 WAV",
+      "processing": "DC removal; periodic 1-second splice or 50-ms event edges; peak normalized to 0.14",
+      "file": "rain-soft.wav",
+      "url": "https://github.com/DNAABR/ambient-sounds-library/releases/download/v0.1.0-preview/rain-soft.wav"
+    },
+    {
+      "sound_id": "water-stream",
+      "creator": "SamsterBirdies",
+      "source_url": "https://freesound.org/people/SamsterBirdies/sounds/584269/",
+      "original_title": "Small brook, stream, water sound by SamsterBirdies",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "asset_sha256": "63b81431fd0758c2d008a42a14b143a9953c3c0b1e3a7f42d6773fb657419c2d",
+      "asset_bytes": 13785212,
+      "duration_seconds": 71.798,
+      "sample_rate": 48000,
+      "channels": 2,
+      "encoding": "PCM16 WAV",
+      "processing": "DC removal; periodic 1-second splice or 50-ms event edges; peak normalized to 0.14",
+      "measurement": {
+        "peak_dbfs": -17.078,
+        "rms_dbfs": -45.708,
+        "dc_per_channel": [
+          -1.1e-07,
+          -1.3e-07
+        ],
+        "loop_boundary_step": 0.00396729,
+        "clipped_samples": 0,
+        "scope": "Delivered PCM measurements; these do not replace listening approval"
+      },
+      "file": "water-stream.wav",
+      "url": "https://github.com/DNAABR/ambient-sounds-library/releases/download/v0.3.0-preview/water-stream.wav"
+    },
+    {
+      "sound_id": "water-river",
+      "creator": "JW_Audio",
+      "source_url": "https://freesound.org/people/JW_Audio/sounds/810231/",
+      "original_title": "WATRFlow_Outdoor, Lake District, Cumbria, River Ellen, Flowing Water, Distant Rumble, Recording 1, Tascam DR-05X Stereo, 48Khs, 24bit_ JW Audio_ by JW_Audio",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "asset_sha256": "9810878a22c3e50c42e79cc3ef331e8cc65f835582e607695e0f3985a6cdc310",
+      "asset_bytes": 17088044,
+      "duration_seconds": 89.0,
+      "sample_rate": 48000,
+      "channels": 2,
+      "encoding": "PCM16 WAV",
+      "processing": "DC removal; periodic 1-second splice or 50-ms event edges; peak normalized to 0.14",
+      "file": "water-river.wav",
+      "url": "https://github.com/DNAABR/ambient-sounds-library/releases/download/v0.2.0-preview/water-river.wav"
+    },
+    {
+      "sound_id": "wind-breeze",
+      "creator": "keweldog",
+      "source_url": "https://freesound.org/people/keweldog/sounds/181801/",
+      "original_title": "breeze.wav by keweldog",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "asset_sha256": "9b6db638e3be9930d2425e7598d8f5d1e4031e3f91a467fe1a6feb9e0492ac53",
+      "asset_bytes": 12256128,
+      "duration_seconds": 63.834,
+      "sample_rate": 48000,
+      "channels": 2,
+      "encoding": "PCM16 WAV",
+      "processing": "DC removal; periodic 1-second splice or 50-ms event edges; peak normalized to 0.14",
+      "measurement": {
+        "peak_dbfs": -17.078,
+        "rms_dbfs": -47.109,
+        "dc_per_channel": [
+          -5e-07,
+          -6.5e-07
+        ],
+        "loop_boundary_step": 0.00015259,
+        "clipped_samples": 0,
+        "scope": "Delivered PCM measurements; these do not replace listening approval"
+      },
+      "file": "wind-breeze.wav",
+      "url": "https://github.com/DNAABR/ambient-sounds-library/releases/download/v0.3.0-preview/wind-breeze.wav"
+    },
+    {
+      "sound_id": "nature-forest-day",
+      "creator": "Sadiquecat",
+      "source_url": "https://freesound.org/people/Sadiquecat/sounds/799439/",
+      "original_title": "250418_10h28 Gergueil West ORTF by Sadiquecat",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "asset_sha256": "919d755e9a8665c49ea5d2aac479513e49b9562dff35a7c8eb69a4d6d389166f",
+      "asset_bytes": 22848044,
+      "duration_seconds": 119.0,
+      "sample_rate": 48000,
+      "channels": 2,
+      "encoding": "PCM16 WAV",
+      "processing": "DC removal; periodic 1-second splice or 50-ms event edges; peak normalized to 0.14",
+      "measurement": {
+        "peak_dbfs": -17.078,
+        "rms_dbfs": -40.727,
+        "dc_per_channel": [
+          3.9e-07,
+          -3.3e-07
+        ],
+        "loop_boundary_step": 0.00946045,
+        "clipped_samples": 0,
+        "scope": "Delivered PCM measurements; these do not replace listening approval"
+      },
+      "file": "nature-forest-day.wav",
+      "url": "https://github.com/DNAABR/ambient-sounds-library/releases/download/v0.3.0-preview/nature-forest-day.wav"
+    },
+    {
+      "sound_id": "animals-cat",
+      "creator": "Trautwein",
+      "source_url": "https://freesound.org/people/Trautwein/sounds/260881/",
+      "original_title": "Cat purr.wav by Trautwein",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "asset_sha256": "f617ac9faf3411a07b442acabf81301cfaef8502987ce4bbac727c347931391a",
+      "asset_bytes": 11347896,
+      "duration_seconds": 59.103,
+      "sample_rate": 48000,
+      "channels": 2,
+      "encoding": "PCM16 WAV",
+      "processing": "DC removal; periodic 1-second splice or 50-ms event edges; peak normalized to 0.14",
+      "measurement": {
+        "peak_dbfs": -17.078,
+        "rms_dbfs": -40.482,
+        "dc_per_channel": [
+          -1.3e-07,
+          -1.3e-07
+        ],
+        "loop_boundary_step": 3.052e-05,
+        "clipped_samples": 0,
+        "scope": "Delivered PCM measurements; these do not replace listening approval"
+      },
+      "file": "animals-cat.wav",
+      "url": "https://github.com/DNAABR/ambient-sounds-library/releases/download/v0.3.0-preview/animals-cat.wav"
+    },
+    {
+      "sound_id": "home-air-conditioner",
+      "creator": "TimBahrij",
+      "source_url": "https://freesound.org/people/TimBahrij/sounds/234918/",
+      "original_title": "ambient low hum (aircon) by TimBahrij",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "asset_sha256": "dbdf5a668ae6fff670af45f0e0eda20f55c2b98c95fba5e894fc74743a5f3f2d",
+      "asset_bytes": 11014700,
+      "duration_seconds": 57.368,
+      "sample_rate": 48000,
+      "channels": 2,
+      "encoding": "PCM16 WAV",
+      "processing": "DC removal; periodic 1-second splice or 50-ms event edges; peak normalized to 0.14",
+      "measurement": {
+        "peak_dbfs": -17.078,
+        "rms_dbfs": -34.31,
+        "dc_per_channel": [
+          -4.96e-06,
+          -2.081e-05
+        ],
+        "loop_boundary_step": 0.00012207,
+        "clipped_samples": 0,
+        "scope": "Delivered PCM measurements; these do not replace listening approval"
+      },
+      "file": "home-air-conditioner.wav",
+      "url": "https://github.com/DNAABR/ambient-sounds-library/releases/download/v0.3.0-preview/home-air-conditioner.wav"
+    }
+  ]
+}
